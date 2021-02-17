@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="main">
+    <title>Order Coffee</title>
+   	<script src="main.js" async></script>
+</head>
+<body>
+<form>
+        <label for="customerName">Name :</label>
+        <input type="text" id="customerName" required><br>
+
+        <label for="drinkType">Type of Drink</label>
+    <div>    
+        <input type="radio" name="DrinkType" id="DrinkType" value="latte">
+        <label for="latte">Latte</label>
+    </div>
+
+    <div>
+        <input type="radio" name="DrinkType" id="DrinkType" value="coffee">
+        <label for="coffee">Coffee</label>
+    </div>
+    
+    <div>    
+		<input type="radio" name="DrinkType" id="DrinkType" value="espresso">
+        <label for="espresso">Espresso</label>
+    </div>
+
+      	<label for="size">Size</label>
+        <select id="size">
+        <option value="Short">Short</option>
+        <option value="Tall">Tall</option>
+        <option value="Grande">Grande</option>
+        <option value="Venti">Venti</option>
+        </select><br>
+
+    <label for="DrinkType">Extra Modifiers</label><br>
+
+    <input type="checkbox" value="yes" id="drizzle">
+    <label for="drizzle">Drizzle</label><br>
+
+    <input type="checkbox" value="yes" id="whippedCream">
+    <label for="whippedCream">Whipped Cream</label><br>
+
+    <input type="checkbox" value="yes" id="sweetner">
+    <label for="sweetner">Sweetner</label><br>
+
+    <input type="checkbox" value="yes" id="coldFoam">
+    <label for="coldFoam">Cold Foam</label><br>
+
+    <label for="size">Dairy</label><br>
+    <select id="dairy"><br>
+    <option value="cream">Cream</option><br>
+    <option value="milk">Milk</option><br>
+    <option value="almondMilk">Almond Milk</option><br>
+    </select><br>
+
+    <button type="button" onclick="coffee()"> Order Now </button>
+</form>
+                
+</body>
+</html>
